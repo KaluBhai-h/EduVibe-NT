@@ -77,7 +77,7 @@ const Subject10 = () => {
           state={{ chapterName: "Live Class", m3u8Url }}
           className="subject-box live-class-section"
         >
-          🔴 No Live Class (Holidays)
+          🔴 Live Class (Click to Join)
         </Link>
       </div>
 
