@@ -337,11 +337,11 @@ const VideoPlayer = () => {
 
       <div style={{
         textAlign: "center",
-        fontSize: "12px",
+        fontSize: "15px",
         marginTop: "30px",
         color: "#ffffff"
       }}>
-        Today’s Study Time: <strong>{studiedMinutes} min</strong>
+        Today’s Study Time: <strong>{studiedMinutes} min</strong>,
         Date :- 10/06/2025
       </div>
     </div>
