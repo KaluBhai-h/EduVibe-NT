@@ -342,6 +342,7 @@ const VideoPlayer = () => {
         color: "#ffffff"
       }}>
         Today’s Study Time: <strong>{studiedMinutes} min</strong>
+        Date :- 10/06/2025
       </div>
     </div>
   );
