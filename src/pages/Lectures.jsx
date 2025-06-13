@@ -23,7 +23,7 @@ const Lectures = () => {
       { name: "Chemical Reaction & Equations", index: 0 },
       { name: "Light", index: 1 },
       { name: "Life Processes", index: 2},
-      { nane: "Acid Base & Salt", index: 3},
+      { name: "Acid Base & Salt", index: 3},
     ],
     Maths: [
       { name: "DPP", index: 19 },
