@@ -44,6 +44,69 @@ const testData = {
         explanation: "Hmm"
       },
     ],
+    "Test 2": [
+      {
+        question: "The least number that is divisible by all the numbers from 1 to 10 (both inclusive) is:",
+        options: ["10", "100", "504", "2520"],
+        correctAnswer: 4,
+        explanation: ""
+      },
+      {
+        question: "The sum of zeroes of the polynomial √2x² - 17 are given as",
+        options: ["17√2/2", "-17√2/2", "0", "1"],
+        correctAnswer: 3,
+        explanation: ""
+      },
+      {
+        question: "A quadratic polynomial having zeroes - √5/2 and √5/2 is",
+        options: ["x²-5√2x + 1", "8x²-20", "15x²-6", "x²-2√5x-1"],
+        correctAnswer: 2,
+        explanation: ""
+      },
+      {
+        question: "Solve 2x + 3y = 11 and 2x-4y = -24 and hence find the value of 'm' for which y = mx + 3.",
+        options: ["-1", "-2", "-3", "5"],
+        correctAnswer: 1,
+        explanation: ""
+      },
+      {
+        question: "In formula racing competition, the time taken by two racing cars A and B to complete 1 round of the track is 30 minutes and p minutes respectively. If the cars meet again at the starting point for the first time after 90 minutes and the HCF (30,p) 15, then the value of p is :",
+        options: ["45 minutes", "60 minutes", "75 minutes", "180 minutes"],
+        correctAnswer: 1,
+        explanation: ""
+      },
+      {
+        question: "The sum of a rational and an irrational numbers",
+        options: ["is always irrational.", "is always rational.", "is either rational or irrational.", "is always positive."],
+        correctAnswer: 1,
+        explanation: ""
+      },
+      {
+        question: "If the zeroes of the quadratic polynomial x² + (a+1)x + b are 2 and 3, then",
+        options: ["a = -7,b = -1", "a = 5,b = -1", "a = 2,b = -6", "a=0,b=-6"],
+        correctAnswer: 4,
+        explanation: ""
+      },
+      {
+        question: "Two polynomials are shows in the figure below.",
+        options: ["0", "1", "2", "3"],
+        correctAnswer: 4,
+        explanation: "",
+        image: "https://dxixtlyravvxx.cloudfront.net/admin_v1/test_management/question_bank_file/173879511_05_25_13_25_16"
+      },
+      {
+        question: "Find the maximum number of students among whom 2002 books and 1040 notebooks can be distributed in such a way that each student gets the same number of books and the same number of notebooks.",
+        options: ["39", "13", "26", "52"],
+        correctAnswer: 3,
+        explanation: ""
+      },
+      {
+        question: "Assertion (A): If product of two numbers is 5780 and their HCF is 17, then their LCM is 340, Reason (R): HCF is always a factor of LCM",
+        options: ["Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).", "Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation of the Assertion (A).", "Assertion (A) is true, but the Reason (R) is false,", "Assertion (A) is false, but Reason (R) is true."],
+        correctAnswer: 2,
+        explanation: ""
+      },
+    ],
   },
   Science: {
     "Test 1": [
