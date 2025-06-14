@@ -177,6 +177,10 @@ const ChapterLectures10 = () => {
           name: "ACP - Life Processes",
           redirect: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/896713520382589400.pdf"
         },
+        {
+          name: "Holiday Homework",
+          redirect: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/476867759954354700.pdf"
+        },
       ],
     },
     Maths: {
