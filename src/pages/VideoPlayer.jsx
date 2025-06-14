@@ -349,7 +349,7 @@ const VideoPlayer = () => {
         marginTop: "30px",
         color: "#ffffff"
       }}>
-        Date :- 13/06/2025
+        Date :- 14/06/2025
       </div>
     </div>
   );
