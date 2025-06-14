@@ -90,32 +90,46 @@ const TestPlatform = () => {
   }, 0);
 
   const renderQuestion = () => {
-    if (!current) return null;
+  if (!current) return null;
 
-    return (
-      <div>
-        {current.usePre ? (
-          <pre
-            style={{
-              whiteSpace: 'pre-wrap',
-              overflowX: 'auto',
-              background: 'transparent',
-              border: 'none',
-              padding: 0,
-              fontSize: '16px',
-              marginBottom: '1rem',
-            }}
-          >
-            {current.question}
-          </pre>
-        ) : (
-          <h2 style={{ fontSize: '20px', marginBottom: '1rem' }}>
-            {current.question}
-          </h2>
-        )}
-      </div>
-    );
-  };
+  return (
+    <div>
+      {current.usePre ? (
+        <pre
+          style={{
+            whiteSpace: 'pre-wrap',
+            overflowX: 'auto',
+            background: 'transparent',
+            border: 'none',
+            padding: 0,
+            fontSize: '16px',
+            marginBottom: '1rem',
+          }}
+        >
+          {current.question}
+        </pre>
+      ) : (
+        <h2 style={{ fontSize: '20px', marginBottom: '1rem' }}>
+          {current.question}
+        </h2>
+      )}
+
+      {/* Show image if exists */}
+      {current.image && (
+        <img
+          src={current.image}
+          alt="question visual"
+          style={{
+            maxWidth: '100%',
+            marginBottom: '1rem',
+            borderRadius: '8px',
+            boxShadow: '0 0 10px rgba(0,0,0,0.1)',
+          }}
+        />
+      )}
+    </div>
+  );
+};
 
   return (
     <div className="container">
