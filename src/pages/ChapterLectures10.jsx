@@ -613,6 +613,10 @@ const ChapterLectures10 = () => {
           name: "WPP 03 Solution",
           redirect: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/294765212475463800.pdf"
         },
+        {
+          name: "WPP 4",
+          redirect: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/191454238596169180.pdf"
+        },
       ],
     },
     English: {
