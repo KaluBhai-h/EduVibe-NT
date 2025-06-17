@@ -169,6 +169,7 @@ const ChapterLectures10 = () => {
           notesUrl: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/106362252495704800.pdf"
         },
       ],
+      ],
       19: [
         {
           name: "ACP Chemical Reaction & Equation",
@@ -347,6 +348,11 @@ const ChapterLectures10 = () => {
           name: "L 2",
           m3u8Url: "https://d1qcficr3lu37x.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4410213/174991601648451097666/174991601648451097666_1097666.m3u8",
           notesUrl: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/234701559771625340.pdf"
+        },
+        {
+          name: "L 3",
+          m3u8Url: "https://d274dp7v20n4nf.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4411382/175008869822868752407/175008869822868752407_8752407.m3u8",
+          notesUrl: ""
         },
       ],
       19: [
@@ -565,6 +571,12 @@ const ChapterLectures10 = () => {
           notesUrl: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/294765212475463800.pdf"
         },
       ],
+      4:[
+        {
+          name: "L 1",
+          m3u8Url: "https://d274dp7v20n4nf.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4411210/175007770550547125088/175007770550547125088_7125088.m3u8",
+          notesUrl: ""
+        },
       100:[
         {
           name: "Holiday Homework",
