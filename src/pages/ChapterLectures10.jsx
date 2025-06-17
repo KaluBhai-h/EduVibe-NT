@@ -169,7 +169,6 @@ const ChapterLectures10 = () => {
           notesUrl: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/106362252495704800.pdf"
         },
       ],
-      ],
       19: [
         {
           name: "ACP Chemical Reaction & Equation",
@@ -577,6 +576,7 @@ const ChapterLectures10 = () => {
           m3u8Url: "https://d274dp7v20n4nf.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4411210/175007770550547125088/175007770550547125088_7125088.m3u8",
           notesUrl: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/42605082467875864.pdf"
         },
+        ],
       100:[
         {
           name: "Holiday Homework",
