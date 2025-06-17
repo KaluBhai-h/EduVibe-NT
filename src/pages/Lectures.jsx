@@ -40,6 +40,7 @@ const Lectures = () => {
       { name: "Resources and Development", index: 1 },
       { name: "Power Sharing", index: 2 },
       { name: "Rise of Nationalism in Europe", index: 3},
+      { name: "Forest & Wildlife Resources", index: 4},
     ],
     IT: [
       { name: "Notice", index: 0 },
