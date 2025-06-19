@@ -36,7 +36,7 @@ function App() {
         <Route path="/lectures/10/:subject" element={<ProtectedRoute><Lectures /></ProtectedRoute>} />
         <Route path="/lectures/11/:subject" element={<ProtectedRoute><Lectures11 /></ProtectedRoute>} />
         <Route path="/11/lectures" element={<LecturesPage11 />} />
-        <Route path="/subjects/11c" element={<Subject11com />} />
+        <Route path="/subjects/113" element={<Subject11com />} />
         <Route path="/11/com/lectures" element={<Com11 />} />
         <Route path="/10/test" element={<ProtectedRoute><TestPlatform /></ProtectedRoute>} />
 
