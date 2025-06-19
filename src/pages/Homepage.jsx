@@ -137,9 +137,13 @@ const Homepage = () => {
 
           <div className="click-box" onClick={() => handleClick(11)}>
             <img src={imageUrl11} alt="Class 11 Batch" className="homepage-image" />
-            <h1 style={{ color: "#fff" }}>Prarambh Science 11th</h1>
+            <h1 style={{ color: "#fff" }}>Prarambh Science 11</h1>
           </div>
-          
+
+          <div className="click-box" onClick={() => handleClick(11c)}>
+            <img src="https://dxixtlyravvxx.cloudfront.net/540/admin_v1/bundle_management/course/202309028610_11th%20prarambh%20comm%20app%20final%203499.jpg" alt="Class 11 Commerce" className="homepage-image" />
+            <h1 style={{ color: "#fff" }}>Class 11 Commerce</h1>
+          </div>
           <div className="click-box" onClick={() => handleClick(9)}>
             <img src={imageUrl9} alt="Class 9 Batch" className="homepage-image" />
             <h1 style={{ color: "#fff" }}>Class 9</h1>
