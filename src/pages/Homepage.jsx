@@ -140,7 +140,7 @@ const Homepage = () => {
             <h1 style={{ color: "#fff" }}>Prarambh Science 11</h1>
           </div>
 
-          <div className="click-box" onClick={() => handleClick(11c)}>
+          <div className="click-box" onClick={() => handleClick(113)}>
             <img src="https://dxixtlyravvxx.cloudfront.net/540/admin_v1/bundle_management/course/202309028610_11th%20prarambh%20comm%20app%20final%203499.jpg" alt="Class 11 Commerce" className="homepage-image" />
             <h1 style={{ color: "#fff" }}>Class 11 Commerce</h1>
           </div>
