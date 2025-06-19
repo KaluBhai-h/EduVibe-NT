@@ -171,7 +171,12 @@ const ChapterLectures10 = () => {
         {
           name: "L 3",
           m3u8Url: "https://d274dp7v20n4nf.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4413730/175025130196888929414/175025130196888929414_8929414.m3u8",
-          notesUrl: ""
+          notesUrl: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/775541372355575600.pdf"
+        },
+        {
+          name: "L 4",
+          m3u8Url: "https://d274dp7v20n4nf.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4414866/175033738727468929414/175033738727468929414_8929414.m3u8",
+          notesUrl: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/807993603967894500.pdf"
         },
       ],
       19: [
@@ -589,19 +594,19 @@ const ChapterLectures10 = () => {
         {
           name: "L 2",
           m3u8Url: "https://d274dp7v20n4nf.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4412488/175016414550777125088/175016414550777125088_7125088.m3u8",
-          notesUrl: ""
+          notesUrl: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/72872097193260320.pdf"
         },
         {
           name: "L 3",
           m3u8Url: "https://d274dp7v20n4nf.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4413854/175026084256997125088/175026084256997125088_7125088.m3u8",
-          notesUrl: ""
+          notesUrl: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/72872097193260320.pdf"
         },
        ],
         5:[
         {
-          name: "L 4",
+          name: "L 1",
           m3u8Url: "https://d274dp7v20n4nf.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4414989/175034785995657125088/175034785995657125088_7125088.m3u8",
-          notesUrl: ""
+          notesUrl: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/606322833395919900.pdf"
         },
        ],
       100:[
@@ -638,6 +643,10 @@ const ChapterLectures10 = () => {
         {
           name: "WPP 4",
           redirect: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/191454238596169180.pdf"
+        },
+        {
+          name: "WPP 5",
+          redirect: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/34822217549140612.pdf"
         },
       ],
     },
