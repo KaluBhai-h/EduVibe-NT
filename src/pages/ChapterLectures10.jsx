@@ -591,7 +591,19 @@ const ChapterLectures10 = () => {
           m3u8Url: "https://d274dp7v20n4nf.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4412488/175016414550777125088/175016414550777125088_7125088.m3u8",
           notesUrl: ""
         },
-        ],
+        {
+          name: "L 3",
+          m3u8Url: "https://d274dp7v20n4nf.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4413854/175026084256997125088/175026084256997125088_7125088.m3u8",
+          notesUrl: ""
+        },
+       ],
+        5:[
+        {
+          name: "L 4",
+          m3u8Url: "https://d274dp7v20n4nf.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4414989/175034785995657125088/175034785995657125088_7125088.m3u8",
+          notesUrl: ""
+        },
+       ],
       100:[
         {
           name: "Holiday Homework",
