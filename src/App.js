@@ -14,6 +14,7 @@ import ChapterLectures11 from "./pages/ChapterLectures11";
 import VideoPlayer from "./pages/VideoPlayer";
 import ProtectedRoute from "./components/ProtectedRoute";
 import LecturesPage11 from './pages/LecturesPage11';
+import Subject11com from './pages/Subject11com';
 import Com11 from './pages/Com11';
 import TestPlatform from './pages/TestPlatform';
 
@@ -35,6 +36,7 @@ function App() {
         <Route path="/lectures/10/:subject" element={<ProtectedRoute><Lectures /></ProtectedRoute>} />
         <Route path="/lectures/11/:subject" element={<ProtectedRoute><Lectures11 /></ProtectedRoute>} />
         <Route path="/11/lectures" element={<LecturesPage11 />} />
+        <Route path="/lectures/11" element={<Subject11com />} />
         <Route path="/11/com/lectures" element={<Com11 />} />
         <Route path="/10/test" element={<ProtectedRoute><TestPlatform /></ProtectedRoute>} />
 
@@ -53,6 +55,7 @@ function App() {
 <Route path="/video/10/live" element={<ProtectedRoute><VideoPlayer /></ProtectedRoute>} />
 <Route path="/video/11/live" element={<ProtectedRoute><VideoPlayer /></ProtectedRoute>} />
           <Route path="/video/11/bio/live" element={<ProtectedRoute><VideoPlayer /></ProtectedRoute>} />
+          <Route path="/video/11/com/live" element={<ProtectedRoute><VideoPlayer /></ProtectedRoute>} />
       </Routes>
     </Router>
   );
