@@ -110,6 +110,20 @@ const ChapterLectures11 = () => {
           notesUrl: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/690234138408011500.pdf"
         },
       ],
+      19: [
+        {
+          name: "The Living World | WPP - 1",
+          redirect: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/420431030347850560.pdf"
+        },
+        {
+          name: "Biological Classification | WPP - 2",
+          redirect: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/659509386144204200.pdf"
+        },
+        {
+          name: "Plant Kingdom | WPP 3",
+          redirect: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/405233751605523000.pdf"
+        },
+      ],
     },
     Maths: {
       0: [
@@ -205,6 +219,10 @@ const ChapterLectures11 = () => {
           name: "Complex no DPP 2",
           redirect: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/831229669238566000.pdf"
         },
+        {
+          name: "Complex no DPP 3",
+          redirect: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/82343275432727600.pdf"
+        },
       ],
     },
     Physics: {
@@ -297,7 +315,15 @@ const ChapterLectures11 = () => {
         {
           name: "PCP 01",
           redirect: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/798807099203843300.pdf"
-        }
+        },
+        {
+          name: "PCP 02",
+          redirect: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/268558098280518300.pdf"
+        },
+        {
+          name: "PCP 03",
+          redirect: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/6266095371686031.pdf"
+        },
       ],
     },
     Chemistry: {
@@ -394,6 +420,20 @@ const ChapterLectures11 = () => {
           name: "L 02",
           m3u8Url: "https://d1qcficr3lu37x.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4388067/174783286454367555169/174783286454367555169_7555169.m3u8",
           notesUrl: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/57056784804374670.pdf"
+        },
+      ],
+      19: [
+        {
+          name: "CPP | Some Basic Concepts Of Chemistry",
+          redirect: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/233315811099442100.pdf"
+        },
+        {
+          name: "CPP | Structure Of an Atom",
+          redirect: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/628466709952854500.pdf"
+        },
+        {
+          name: "CPP | Classification of Elements & Periodicity of Properties",
+          redirect: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/791868201061658600.pdf"
         },
       ],
     },
