@@ -21,6 +21,7 @@ const Lectures11 = () => {
       { name: "Motion in a straight line", index: 2},
     ],
     Chemistry: [
+      { name: "CPP", index: 19},
       { name: "Basic concept of Chemistry", index: 0 },
       { name: "Structure of an Atom", index: 1 },
     ],
@@ -31,6 +32,7 @@ const Lectures11 = () => {
       { name: "Relations and Functions", index: 2},
     ],
     Biology: [
+      { name: "WPP", index: 19},
       { name: "Living World", index: 0 },
       { name: "Biological Classisfication", index: 1 },
       { name: "Living World", index: 2},
