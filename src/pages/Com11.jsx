@@ -3,17 +3,16 @@ import { useNavigate } from 'react-router-dom';
 
 const subjects = [
   { name: 'Maths', api: 'maths' },
-  { name: 'Economis', api: 'eco' },
-  { name: 'Buisness Studied', api: 'bcom' },
+  { name: 'Economics', api: 'eco' },
+  { name: 'Buisness Studies', api: 'bcom' },
   { name: 'Accounts', api: 'acc' }
 ];
 
 // Define where to start for each subject
 const subjectFilters = {
   Accounts: 'No videos found',
-  Buisness: 'No videos found',
   Maths: 'No videos found',
-  Economis: 'No videos found'
+  Economics: 'No videos found'
 };
 
 const Com11 = () => {
@@ -27,7 +26,7 @@ const Com11 = () => {
   const fetchLectures = async (api, name) => {
     setLoading(true);
     try {
-      const res = await fetch(`https://automate-eduvibe-nt.ct.ws/?api=${api}`);
+      const res = await fetch(`https://automate-eduvibe-nt11eco.wasmer.app/?api=${api}`);
       const data = await res.json();
 
       const marker = subjectFilters[name];
