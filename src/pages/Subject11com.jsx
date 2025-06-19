@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import "../styles/global.css";
-import tt from "../assets/tt.png";
 
 const Subject11com = () => {
   const navigate = useNavigate();
@@ -63,12 +62,12 @@ const Subject11com = () => {
 
   return (
     <div className="subjects-container">
-      <img src={tt} alt="Logo" className="tt" />
+      <img src="https://dxixtlyravvxx.cloudfront.net/540/admin_v1/sample/25657680_IMG-20250420-WA0006.jpg" alt="Logo" className="tt" />
       <h2>Select Subject - Class 11 Commerce</h2>
 
       <div className="live-class-container">
         <Link
-          to={`/video/10/live`}
+          to={`/video/11/com/live`}
           state={{ chapterName: "Live Class", m3u8Url }}
           className="subject-box live-class-section"
         >
