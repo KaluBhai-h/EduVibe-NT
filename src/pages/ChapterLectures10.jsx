@@ -430,6 +430,10 @@ const ChapterLectures10 = () => {
           name: "DPP 15",
           redirect: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/11948867526303130.pdf"
         },
+        {
+          name: "DPP 16",
+          redirect: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/595242765959360300.pdf"
+        },
       ],
     },
     SST: {
