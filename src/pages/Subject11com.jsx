@@ -25,7 +25,7 @@ const Subject11com = () => {
   const subjectLinks = {
     "Maths (Core)": "",
     "Business Studies": "",
-    "Accounts": "",
+    "Accounts": "https://d133w6ldrek1er.cloudfront.net/out/v1/ca26d3ff165b4e07a358b55f5455cd98/index.m3u8",
     "Economics": "https://d133w6ldrek1er.cloudfront.net/out/v1/c923787f6b3b40cbbfbdc51d2d76e51e/index.m3u8",
   };
 
