@@ -41,6 +41,7 @@ const Lectures = () => {
       { name: "Power Sharing", index: 2 },
       { name: "Rise of Nationalism in Europe", index: 3},
       { name: "Forest & Wildlife Resources", index: 4},
+      { name: "Sectors of Indian economy", index: 5},
     ],
     IT: [
       { name: "Notice", index: 0 },
