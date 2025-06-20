@@ -193,8 +193,8 @@ const ChapterLectures10 = () => {
           redirect: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/896713520382589400.pdf"
         },
         {
-          name: "Holiday Homework",
-          redirect: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/476867759954354700.pdf"
+          name: "ACP - Acid Base & Salt with solution",
+          redirect: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/445901992631399000.pdf"
         },
       ],
     },
