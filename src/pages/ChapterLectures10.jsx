@@ -178,6 +178,16 @@ const ChapterLectures10 = () => {
           m3u8Url: "https://d274dp7v20n4nf.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4414866/175033738727468929414/175033738727468929414_8929414.m3u8",
           notesUrl: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/807993603967894500.pdf"
         },
+        {
+          name: "L5",
+          m3u8Url: "https://d274dp7v20n4nf.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4415940/175042369115078929414/175042369115078929414_8929414.m3u8",
+          notesUrl: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/78532354687740060.pdf"
+        },
+        {
+          name: "Doubt solving",
+          m3u8Url: "https://d274dp7v20n4nf.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4416573/175050899233748929414/175050899233748929414_8929414.m3u8",
+          notesUrl: ""
+        },
       ],
       19: [
         {
