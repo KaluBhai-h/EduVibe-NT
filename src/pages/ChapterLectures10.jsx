@@ -389,6 +389,13 @@ const ChapterLectures10 = () => {
           notesUrl: ""
         },
       ],
+      5: [
+        {
+          name: "L 1",
+          m3u8Url: "https://d274dp7v20n4nf.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4417726/175069337476008752407/175069337476008752407_8752407.m3u8.m3u8",
+          notesUrl: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/215880257111139400.pdf"
+        },
+      ],
       19: [
         {
           name: "DPP 1",
@@ -631,6 +638,11 @@ const ChapterLectures10 = () => {
           name: "L 1",
           m3u8Url: "https://d274dp7v20n4nf.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4414989/175034785995657125088/175034785995657125088_7125088.m3u8",
           notesUrl: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/606322833395919900.pdf"
+        },
+        {
+          name: "L 3",
+          m3u8Url: "https://d274dp7v20n4nf.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4417609/175068233385897125088/175068233385897125088_7125088.m3u8",
+          notesUrl: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/210793941689131230.pdf"
         },
        ],
       100:[
