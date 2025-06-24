@@ -32,6 +32,7 @@ const Lectures = () => {
       { name: "Pair of Linear Eq in two var", index: 2 },
       { name: "Trigonometry", index: 3 },
       { name: "Applicatios of Trigonometry", index: 4},
+      { name: "Quadratic Equations", index: 5 },
     ],
     SST: [
       { name: "WPP", index: 19 },
