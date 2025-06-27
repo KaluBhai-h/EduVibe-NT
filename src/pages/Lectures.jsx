@@ -24,6 +24,7 @@ const Lectures = () => {
       { name: "Light", index: 1 },
       { name: "Life Processes", index: 2},
       { name: "Acid Base & Salt", index: 3},
+      { name: "Human eye & Colourful World", index: 4},
     ],
     Maths: [
       { name: "DPP", index: 19 },
