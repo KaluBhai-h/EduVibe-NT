@@ -3,7 +3,7 @@ import videojs from "video.js";
 import "video.js/dist/video-js.css";
 import "videojs-contrib-quality-levels";
 import "videojs-hls-quality-selector";
-import 'videojs-hotkeys';
+import "videojs-hotkeys";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const VideoPlayer = () => {
@@ -47,27 +47,38 @@ const VideoPlayer = () => {
 
     const videoSource = m3u8Url;
 
-    playerRef.current = videojs(videoRef.current, {
-      controls: true,
-      preload: true,
-      autoplay: true,
-      fluid: true,
-      playbackRates: [0.5, 1, 1.25, 1.5, 1.75, 2],
-      html5: {
-        vhs: {
-          overrideNative: true,
-          enableLowInitialPlaylist: true,
+    playerRef.current = videojs(
+      videoRef.current,
+      {
+        controls: true,
+        preload: true,
+        autoplay: true,
+        fluid: true,
+        playbackRates: [0.5, 1, 1.25, 1.5, 1.75, 2],
+        html5: {
+          vhs: {
+            overrideNative: true,
+            enableLowInitialPlaylist: true,
+          },
         },
-      },
-      function () {
-        // Hotkeys plugin options
-        this.hotkeys({
-          volumeStep: 0.1,
-          seekStep: 10,
-          enableModifiersForNumbers: false
-        });
+        // ➜ Hot-keys plugin wired here
+        plugins: {
+          hotkeys: {
+            volumeStep: 0.1,
+            seekStep: 10,
+            enableModifiersForNumbers: false,
+          },
+        },
+        // (kept your anonymous function so nothing else changes)
+        function() {
+          this.hotkeys({
+            volumeStep: 0.1,
+            seekStep: 10,
+            enableModifiersForNumbers: false,
+          });
+        },
       }
-    });
+    );
 
     playerRef.current.src({
       src: videoSource,
@@ -223,12 +234,14 @@ const VideoPlayer = () => {
 
   const handleDownloadClick = () => {
     const fileName = `${chaptersName} ${lecturesName}`; // You can customize filename if you want
-    const downloadUrl= m3u8Url;
-    const intentUrl = `intent:${downloadUrl}#Intent;action=android.intent.action.VIEW;package=idm.internet.download.manager;scheme=1dmdownload;S.title=${encodeURIComponent(fileName)};end`;
-    
-  // Redirect to open in 1DM
-  window.location.href = intentUrl;
-};
+    const downloadUrl = m3u8Url;
+    const intentUrl = `intent:${downloadUrl}#Intent;action=android.intent.action.VIEW;package=idm.internet.download.manager;scheme=1dmdownload;S.title=${encodeURIComponent(
+      fileName
+    )};end`;
+
+    // Redirect to open in 1DM
+    window.location.href = intentUrl;
+  };
 
   return (
     <div>
@@ -239,7 +252,12 @@ const VideoPlayer = () => {
       </h2>
 
       <div style={{ position: "relative" }}>
-        <video ref={videoRef} className="video-js vjs-default-skin" />
+        {/* ➜ tabIndex lets the element receive focus for keyboard events */}
+        <video
+          ref={videoRef}
+          className="video-js vjs-default-skin"
+          tabIndex={0}
+        />
       </div>
 
       {!isLive && (
@@ -254,7 +272,7 @@ const VideoPlayer = () => {
               borderRadius: "5px",
               fontSize: "16px",
               cursor: "pointer",
-              boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
+              boxShadow: "0 2px 5px rgba(0, 0, 0, 0.1)",
             }}
           >
             Download Lecture
@@ -263,21 +281,24 @@ const VideoPlayer = () => {
       )}
 
       {showPopup && (
-        <div style={{
-          position: "fixed",
-          bottom: "20px",
-          left: "50%",
-          transform: "translateX(-50%)",
-          backgroundColor: "#fff",
-          padding: "20px",
-          borderRadius: "10px",
-          boxShadow: "0 5px 15px rgba(0,0,0,0.3)",
-          zIndex: 1000,
-          textAlign: "center",
-          maxWidth: "90%",
-        }}>
+        <div
+          style={{
+            position: "fixed",
+            bottom: "20px",
+            left: "50%",
+            transform: "translateX(-50%)",
+            backgroundColor: "#fff",
+            padding: "20px",
+            borderRadius: "10px",
+            boxShadow: "0 5px 15px rgba(0, 0, 0, 0.3)",
+            zIndex: 1000,
+            textAlign: "center",
+            maxWidth: "90%",
+          }}
+        >
           <p style={{ marginBottom: "15px", color: "#333" }}>
-            Link copied to clipboard. Go to Telegram group, paste the link, and send to download the video.
+            Link copied to clipboard. Go to Telegram group, paste the link, and
+            send to download the video.
           </p>
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <button
@@ -335,12 +356,14 @@ const VideoPlayer = () => {
         </div>
       )}
 
-      <div style={{
-        textAlign: "center",
-        fontSize: "12px",
-        marginTop: "30px",
-        color: "#ffffff"
-      }}>
+      <div
+        style={{
+          textAlign: "center",
+          fontSize: "12px",
+          marginTop: "30px",
+          color: "#ffffff",
+        }}
+      >
         Today’s Study Time: <strong>{studiedMinutes} min</strong>
       </div>
     </div>
