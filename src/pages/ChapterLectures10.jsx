@@ -189,6 +189,18 @@ const ChapterLectures10 = () => {
           notesUrl: ""
         },
       ],
+      4: [
+        {
+         "name": "L1",
+         "m3u8Url": "https://d274dp7v20n4nf.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4420694/175094118357238929414/175094118357238929414_8929414.m3u8",
+         "notesUrl": ""
+        },
+  {
+    "name": "L2",
+    "m3u8Url": "https://d274dp7v20n4nf.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4426247/175102765297458929414/175102765297458929414_8929414.m3u8",
+    "notesUrl": ""
+  },
+      ],
       19: [
         {
           name: "ACP Chemical Reaction & Equation",
