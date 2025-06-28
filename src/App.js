@@ -17,6 +17,7 @@ import LecturesPage11 from './pages/LecturesPage11';
 import Subject11com from './pages/Subject11com';
 import Com11 from './pages/Com11';
 import TestPlatform from './pages/TestPlatform';
+import Class9 from './pages/Class9';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/subjects/9" element={<ProtectedRoute><Subject9 /></ProtectedRoute>} />
         <Route path="/subjects/10" element={<ProtectedRoute><Subject10 /></ProtectedRoute>} />
         <Route path="/subjects/11" element={<ProtectedRoute><Subject11 /></ProtectedRoute>} />
+        <Route path="/subjectss/9" element={<Class9 />} />
 
         {/* Lecture Pages */}
         <Route path="/lectures/9/:subject" element={<ProtectedRoute><Lectures9 /></ProtectedRoute>} />
