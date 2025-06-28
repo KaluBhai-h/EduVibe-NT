@@ -1,6 +1,8 @@
-// class9.jsx
+// src/pages/Class9.jsx
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
+const SCRAPER_ORIGIN = "https://47b7e77f-447e-495e-87c3-0f05dead215f-00-13isrhur0zcw1.pike.replit.dev"; // ← change
 const SUBJECTS = [
   { id: "Maths", label: "Maths", url: "https://studyverse-for-9th.infy.uk/Maths.html" },
   { id: "Science", label: "Science", url: "https://studyverse-for-9th.infy.uk/Science.html" },
@@ -8,106 +10,112 @@ const SUBJECTS = [
   { id: "biology", label: "Biology", url: "https://studyverse-for-9th.infy.uk/Biology.html" }
 ];
 
-/* build your scraper endpoint */
-const replit = "https://47b7e77f-447e-495e-87c3-0f05dead215f-00-13isrhur0zcw1.pike.replit.dev"
-const buildApi = url => `${replit}/scrape?url=${encodeURIComponent(url)}`;
+const api = url => `${SCRAPER_ORIGIN}/scrape?url=${encodeURIComponent(url)}`;
 
 export default function Class9() {
   const [active, setActive] = useState(SUBJECTS[0].id);
-  const [data, setData] = useState({});
+  const [cache, setCache] = useState({});
   const [loading, setLoading] = useState(false);
   const [err, setErr] = useState(null);
+  const navigate = useNavigate();
 
+  /* fetch subject once */
   useEffect(() => {
     const { id, url } = SUBJECTS.find(s => s.id === active);
-    if (data[id]) return;                      // already fetched
+    if (cache[id]) return;
 
     setLoading(true);
     setErr(null);
-
-    fetch(buildApi(url))
+    fetch(api(url))
       .then(r => r.json())
-      .then(json => setData(prev => ({ ...prev, [id]: json.chapters || [] })))
+      .then(j => setCache(p => ({ ...p, [id]: j.chapters || [] })))
       .catch(e => setErr(e.message))
       .finally(() => setLoading(false));
   }, [active]);
 
-  /* ---------------- render helpers ---------------- */
-  const VideoLink = ({ subjId, vIdx, v }) => {
-    if (v.youtubeUrl)
-      return (
-        <a href={v.youtubeUrl} target="_blank" rel="noopener noreferrer"
-           className="text-blue-600 hover:underline">YouTube</a>
-      );
+  /* ---------------- UI helpers ---------------- */
 
-    /* m3u8 – route to /video/:subj/:idx */
-    return (
-      <a href={`/video/${subjId}/${vIdx}`} className="text-blue-600 hover:underline">
-        Play
-      </a>
-    );
-  };
+  const Pill = ({ children, href, onClick }) => (
+    <a
+      href={href}
+      onClick={onClick}
+      target={href ? "_blank" : undefined}
+      rel="noopener noreferrer"
+      className="inline-block px-3 py-1 text-sm rounded-full bg-blue-100 hover:bg-blue-200 text-blue-800"
+    >
+      {children}
+    </a>
+  );
 
-  const renderChapter = (chap, chapIdx, subjId) => (
-    <details key={chapIdx} className="mb-4 border rounded-lg">
-      <summary className="cursor-pointer select-none p-3 font-semibold bg-gray-100">
-        {chap.chapter || `Chapter ${chapIdx + 1}`}
+  const ChapterCard = ({ c, subjId }) => (
+    <details className="rounded-xl shadow p-4 mb-4 bg-white">
+      <summary className="cursor-pointer font-semibold mb-2 select-none">
+        {c.chapter}
       </summary>
 
-      <div className="p-4 space-y-4">
-        {chap.videos?.length > 0 && (
-          <div className="space-y-2">
-            <h3 className="font-semibold text-lg">Videos</h3>
-            {chap.videos.map((v, i) => (
-              <div key={i} className="flex justify-between items-center border-b py-1">
+      {c.videos?.length > 0 && (
+        <div className="mb-4">
+          <h3 className="font-medium mb-1">Videos</h3>
+          <div className="space-y-1">
+            {c.videos.map((v, i) => (
+              <div key={i} className="flex justify-between items-center">
                 <span>{v.lecture}</span>
-                <VideoLink subjId={subjId} vIdx={i} v={v} />
+                {v.youtubeUrl ? (
+                  <Pill href={v.youtubeUrl}>YouTube</Pill>
+                ) : (
+                  <Pill onClick={e => { e.preventDefault(); navigate(`/video/9/${subjId}/${i}`); }}>Play</Pill>
+                )}
               </div>
             ))}
           </div>
-        )}
+        </div>
+      )}
 
-        {chap.notes?.length > 0 && (
-          <div className="space-y-2">
-            <h3 className="font-semibold text-lg">Notes</h3>
-            {chap.notes.map((n, i) => (
-              <div key={i} className="flex justify-between items-center border-b py-1">
+      {c.notes?.length > 0 && (
+        <div>
+          <h3 className="font-medium mb-1">Notes</h3>
+          <div className="space-y-1">
+            {c.notes.map((n, i) => (
+              <div key={i} className="flex justify-between items-center">
                 <span>{n.lecture}</span>
-                <a href={n.url} target="_blank" rel="noopener noreferrer"
-                   className="text-blue-600 hover:underline">PDF</a>
+                <Pill href={n.url}>PDF</Pill>
               </div>
             ))}
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </details>
   );
 
-  /* ---------------- main render ---------------- */
+  /* ---------------- render ---------------- */
+
   return (
-    <div className="max-w-4xl mx-auto p-4">
-      {/* subject tabs */}
-      <div className="flex flex-wrap gap-2 mb-6">
+    <div className="max-w-5xl mx-auto p-6 space-y-6">
+      {/* top tab row */}
+      <div className="flex flex-wrap gap-2">
         {SUBJECTS.map(s => (
           <button
             key={s.id}
             onClick={() => setActive(s.id)}
-            className={`px-4 py-2 rounded-md border
-              ${active === s.id ? "bg-blue-600 text-white" : "bg-white"}`}>
+            className={`px-4 py-2 rounded-full border
+              ${active === s.id ? "bg-blue-600 text-white" : "bg-gray-50"}`}
+          >
             {s.label}
           </button>
         ))}
       </div>
 
-      {/* content */}
+      {/* content area */}
       {loading && <p>Loading…</p>}
       {err && <p className="text-red-600">{err}</p>}
 
-      {!loading && !err && data[active]?.length > 0 && (
+      {!loading && !err && cache[active]?.length > 0 && (
         <div>
-          {data[active].map((chap, idx) => renderChapter(chap, idx, active))}
+          {cache[active].map((c, idx) => (
+            <ChapterCard key={idx} c={c} subjId={active} />
+          ))}
         </div>
       )}
     </div>
   );
-}
+      }
