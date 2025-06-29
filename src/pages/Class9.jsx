@@ -5,14 +5,14 @@ import { useNavigate } from "react-router-dom";
 const SCRAPER = "https://tust-pink.vercel.app/scrape?url="; // ← change
 
 const SUBJECTS = [
-  { name: "Maths",   url: "https://studyverse-for-9th.infy.uk/Maths.html" },
-  { name: "Science", url: "https://studyverse-for-9th.infy.uk/Science.html" },
-  { name: "English", url: "https://studyverse-for-9th.infy.uk/English.html" },
-  { name: "SST",     url: "https://studyverse-for-9th.infy.uk/SST.html" },
-  { name: "Hindi", url: "https://studyverse-for-9th.infy.uk/Hindi.html"},
-  { name: "IT & AI", url: "https://studyverse-for-9th.infy.uk/IT&AI.html"},
-  { name: "Sanskrit", url: "https://studyverse-for-9th.infy.uk/Sanskrit.html"},
-  { name: "DPP's", url: "https://studyverse-for-9th.infy.uk/DPPVault.html"},
+  { name: "Maths",   url: "https://studyverse-network.netlify.app//Maths.html" },
+  { name: "Science", url: "https://studyverse-network.netlify.app//Science.html" },
+  { name: "English", url: "https://studyverse-network.netlify.app//English.html" },
+  { name: "SST",     url: "https://studyverse-network.netlify.app//SST.html" },
+  { name: "Hindi", url: "https://studyverse-network.netlify.app//Hindi.html"},
+  { name: "IT & AI", url: "https://studyverse-network.netlify.app//IT&AI.html"},
+  { name: "Sanskrit", url: "https://studyverse-network.netlify.app//Sanskrit.html"},
+  { name: "DPP's", url: "https://studyverse-network.netlify.app//DPPVault.html"},
 ];
 
 /****************  STYLES  *****************/
