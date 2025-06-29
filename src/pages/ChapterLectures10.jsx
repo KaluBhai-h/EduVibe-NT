@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import "../styles/ChapterLectures.css";
@@ -411,6 +412,11 @@ const ChapterLectures10 = () => {
           name: "L 1",
           m3u8Url: "https://d274dp7v20n4nf.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4417726/175069337476008752407/175069337476008752407_8752407.m3u8",
           notesUrl: "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/215880257111139400.pdf"
+        },
+        {
+        "name": "L2",
+        "m3u8Url": "https://d274dp7v20n4nf.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4427456/175112650121268752407/175112650121268752407_8752407.m3u8",
+        "notesUrl": "https://dxixtlyravvxx.cloudfront.net/540admin_v1/file_manager/pdf/682683263559778800.pdf"
         },
       ],
       19: [
