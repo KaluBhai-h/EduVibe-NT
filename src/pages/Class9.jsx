@@ -8,7 +8,11 @@ const SUBJECTS = [
   { name: "Maths",   url: "https://studyverse-for-9th.infy.uk/Maths.html" },
   { name: "Science", url: "https://studyverse-for-9th.infy.uk/Science.html" },
   { name: "English", url: "https://studyverse-for-9th.infy.uk/English.html" },
-  { name: "SST",     url: "https://studyverse-for-9th.infy.uk/SST.html" }
+  { name: "SST",     url: "https://studyverse-for-9th.infy.uk/SST.html" },
+  { name: "Hindi", url: "https://studyverse-for-9th.infy.uk/Hindi.html"},
+  { name: "IT & AI", url: "https://studyverse-for-9th.infy.uk/IT&AI.html"},
+  { name: "Sanskrit", url: "https://studyverse-for-9th.infy.uk/Sanskrit.html"},
+  { name: "DPP's", url: "https://studyverse-for-9th.infy.uk/DPPVault.html"},
 ];
 
 /****************  STYLES  *****************/
