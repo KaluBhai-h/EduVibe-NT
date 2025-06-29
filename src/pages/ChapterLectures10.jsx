@@ -200,6 +200,11 @@ const ChapterLectures10 = () => {
     "m3u8Url": "https://d274dp7v20n4nf.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4426247/175102765297458929414/175102765297458929414_8929414.m3u8",
     "notesUrl": ""
   },
+        {
+        "name": "Human eye L3",
+        "m3u8Url": "https://d274dp7v20n4nf.cloudfront.net/file_library/videos/channel_vod_non_drm_hls/4427347/175111381865158929414/175111381865158929414_8929414.m3u8",
+        "notesUrl": ""
+        },
       ],
       19: [
         {
