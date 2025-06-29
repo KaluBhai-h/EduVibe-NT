@@ -53,13 +53,7 @@ const Subject9 = () => {
   }, []);
 
   const subjects = [
-    { name: "Science", path: "/lectures/9/Science" },
-    { name: "Maths", path: "/lectures/9/Maths" },
-    { name: "SST", path: "/lectures/9/SST" },
-    { name: "English", path: "/lectures/9/English" },
-    { name: "Hindi", path: "/lectures/9/Hindi" },
-    { name: "IT", path: "/lectures/9/IT" },
-    { name: "Sanskrit", path: "/lectures/9/Sanskrit" },
+    { name: "Clcik Here for automated Lectures", path: "/subjectss/9"},
   ];
 
   return (
